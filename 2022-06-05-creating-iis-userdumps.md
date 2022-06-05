@@ -1,7 +1,7 @@
-# Quick and dirty guide to IIS crash dump creation.
+# Quick and dirty guide to IIS (and process) crash dump creation with DebugDiag.
 #### By Ole Tøsse Kolvik
 
-## Creating IIS userdumps
+## Creating userdumps
 
 Userdumps can be useful for developers to dig down into the callstack of exceptions
 
@@ -26,6 +26,7 @@ We want to collect crash dumps, so select "Crash", then click next.
 You can debug all IIS instances or select an application pool.
 I recommend only selecting the application pool you need to debug.
 
+_If you need to debug a standalone application or service you can select those options. The setup is the same_
 
 ### Select the application pool you want to debug
 ![selectapppool.png]({{site.baseurl}}/selectapppool.png)
@@ -87,4 +88,3 @@ You can use DebugDiag Analysis (installed with DebugDiag) to get information abo
 
 Select "CrashHangAnalysis" and click "Add Data Files" (the userdumps). Then start analysis.\
 This will give you the exception and stack trace for all the dumps. Use it to filter out what files to keep.
-
