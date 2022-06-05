@@ -81,7 +81,7 @@ Select "Activate rule now" and click "Finish".
 The rule will start monitoring immediately. Open the folder where you selected to store logs.
 
 ## DebugDiag Analysis
-You can use DebugDiag Analysis to get information about the dumps
+You can use DebugDiag Analysis (installed with DebugDiag) to get information about the dumps
 
 ![analysis.png]({{site.baseurl}}/analysis.png)
 
