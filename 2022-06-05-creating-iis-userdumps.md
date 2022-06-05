@@ -51,7 +51,7 @@ Click "Exceptions" in advanced configuration, then click "Add exception" in the 
 
 Select the exception you want to log in the list. Depending on the type of exception there will be a few more options.
 For CLR exceptions you can filter by exception message or faulting module.
-Nullpointer exceptions are usually exception code C0000005 - Access Violation.
+Null pointer exceptions (System.NullReferenceException) are usually exception code C0000005 - Access Violation.
 
 Set the action type to "Full Userdump" and the action limit to how many userdumps you wish to capture.
 Setting this value to 1 will capture a userdump the first time the exception happens, but not any after that.
